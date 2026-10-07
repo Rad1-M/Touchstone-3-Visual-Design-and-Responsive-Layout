@@ -28,6 +28,14 @@
         </p>
       </section>
 
+      <!-- Widget: Favorite Items Tracker (Interactive Feature) -->
+      <section class="card favorites-widget">
+        <h3>Your Saved Favorites (<span id="favorites-count">0</span>)</h3>
+        <ul id="favorites-list">
+          <!-- Dynamically updated by script.js -->
+        </ul>
+      </section>
+
       <div class="card-grid">
         <section class="card">
           <h3>Artisan Breads</h3>
@@ -38,9 +46,12 @@
           <p><strong>Price Range:</strong> $4.00 - $8.00</p>
           <img
             src="images/bakery-bread.jpg"
-            alt="Assorted artisan breads on display in the bakery"
+            alt="Assorted artisan breads"
             class="card-img"
           />
+          <button type="button" class="fav-btn" data-product="Artisan Breads">
+            🤍 Add to Favorites
+          </button>
         </section>
 
         <section class="card">
@@ -51,9 +62,16 @@
           <p><strong>Price Range:</strong> $3.00 - $6.00</p>
           <img
             src="images/Pastries_Sweets.jpg"
-            alt="Freshly baked pastries and sweet treats"
+            alt="Freshly baked pastries"
             class="card-img"
           />
+          <button
+            type="button"
+            class="fav-btn"
+            data-product="Pastries & Sweets"
+          >
+            🤍 Add to Favorites
+          </button>
         </section>
 
         <section class="card">
@@ -65,9 +83,12 @@
           <p><strong>Price Range:</strong> $25.00 - $60.00</p>
           <img
             src="images/Custom_Cakes.jpg"
-            alt="Beautifully decorated handcrafted celebration cakes"
+            alt="Handcrafted celebration cakes"
             class="card-img"
           />
+          <button type="button" class="fav-btn" data-product="Custom Cakes">
+            🤍 Add to Favorites
+          </button>
         </section>
       </div>
     </main>
@@ -75,5 +96,7 @@
     <footer>
       <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

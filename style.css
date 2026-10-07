@@ -161,6 +161,70 @@ button:hover { background-color: var(--charcoal); border-color: var(--charcoal);
 
 .form-page { max-width: 640px; }
 
+/* ---------- Interactive Features & Validation Styles ---------- */
+.fav-btn {
+  background-color: #6b3e26;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.fav-btn:hover {
+  background-color: #8c5332;
+}
+
+.fav-btn.saved {
+  background-color: #276749;
+}
+
+.favorites-widget {
+  background-color: #fffaf0;
+  border: 2px dashed #b87333;
+  margin-bottom: 25px;
+}
+
+.favorites-widget ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.favorites-widget li {
+  padding: 5px 0;
+  font-size: 1.05rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.error-msg {
+  color: #c53030;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.success-msg {
+  color: #276749;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
 /* ---------- Footer ---------- */
 footer {
   background-color: var(--brown);
